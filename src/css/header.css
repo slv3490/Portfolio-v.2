@@ -1,0 +1,141 @@
+@import "variables";
+
+.container-header {
+    background-image: url("../images/backgroundHeader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.principal-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    user-select: none;
+    padding-top: 1rem;
+}
+.divpadre {
+    width: 10rem;
+    height: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inicio {
+    z-index: 50;
+}
+.hijo{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.principal-nav a {
+    color: white;
+    font-size: 2rem;
+}
+.principal-nav a:hover {
+    color: var(--blue-title);
+    cursor: pointer;
+}
+.adentro {
+    position: absolute;
+    display: flex;
+}
+.square {
+    width: 10px;
+    height: 10px;
+    background-color: var(--blue-300);
+    margin: 5px;
+}
+.gradient {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 40%, var(--blue-300) 100%);
+}
+.opposite-gradient {
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgb(0, 0, 0) 40%, var(--blue-300) 100%);
+}
+.content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    flex: 4;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    user-select: none;
+}
+.name {
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+.welcome {
+    font-family: "Montserrat", "sans-serif";
+    font-size: 2.3rem;
+    margin: 1rem 0;
+    font-weight: 600;
+    color: rgb(223, 223, 223);
+}
+.profession {
+    font-size: 1.3rem;
+    color: var(--blue-50);
+}
+.networks {
+    display: flex;
+    gap: 1rem;
+}
+.icon-network {
+    width: 2rem;
+    margin-left: 1rem;
+}
+.github {
+    background-color: var(--gray-500);
+    border: 1px solid #afafaf;
+    transition: all 200ms ease-in;
+}
+.github:hover {
+    background-color: #010409;
+}
+.linkedin {
+    background-color: #0A66C2;
+    border: 1px solid #afafaf;
+    transition: all 200ms ease-in;
+}
+.linkedin:hover {
+    background-color: #0a57a3;
+}
+.email {
+    background-color: #EFEFE1;
+    border: 1px solid #ffffff;
+    transition: all 200ms ease-in;
+}
+.email p {
+    color: black;
+}
+.email:hover {
+    background-color: #d1d1c3;
+}
+.github, .linkedin, .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem .8rem;
+    margin-top: 2rem;
+    border-radius: .3rem;
+}
+.ubication {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}

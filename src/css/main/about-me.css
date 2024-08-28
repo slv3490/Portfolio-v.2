@@ -1,0 +1,36 @@
+@import "../variables";
+
+.container-about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33rem;
+    flex: 1;
+}
+.about-me {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    flex: 1;
+}
+.about-me p {
+    font-size: 1.3rem;
+}
+.about-me > p {
+    margin-bottom: 1rem;
+}
+.about-me h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: "Press Start 2P";
+    font-size: 2.5rem;
+}
+#my-room > canvas {
+    width: 100% !important; 
+    height: 100% !important;
+}
+#my-room {
+    flex: 1.5;
+}
+.highlighted {
+    color: var(--blue-50);
+}

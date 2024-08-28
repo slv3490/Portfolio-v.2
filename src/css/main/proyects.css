@@ -1,0 +1,55 @@
+@import "../variables";
+
+.container-proyects {
+
+}
+.proyects-title {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+.proyects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.proyect {
+    margin: 0 auto;
+    border: 1px solid #2995c788;
+    padding: 0 0 1.5rem;
+}
+.proyect-title, .proyect-paragraph, .tags {
+    padding: 0 1.5rem;
+}
+.proyect-video {
+    width: 100%;
+    cursor: pointer;
+}
+.proyect-title {
+    text-align: center;
+    margin: 1.3rem 0;
+    font-size: 1.7rem;
+}
+.proyect-paragraph {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin: 1.3rem 0;
+}
+.tags {
+    display: flex;
+    margin-top: 1.2rem;
+}
+.tag {
+    margin-right: .7rem;
+    background-color: var(--blue-300);
+    padding: .2rem .8rem;
+    border: 1px solid #ffffff33;
+    border-radius: .2rem;
+    box-shadow: -3px 3px 5px black;
+    cursor: pointer;
+    user-select: none;
+}
+.tag:hover {
+    background-color: #13435a;
+}

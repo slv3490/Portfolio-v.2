@@ -1,0 +1,73 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--gray-500);
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--blue-50);
+    border-radius: 4px;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Press Start 2P", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+p, a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Fonts */
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+  
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
