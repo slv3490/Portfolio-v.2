@@ -45,8 +45,8 @@
     display: flex;
 }
 .square {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background-color: var(--blue-300);
     margin: 5px;
 }
@@ -86,6 +86,7 @@
     margin: 1rem 0;
     font-weight: 600;
     color: rgb(223, 223, 223);
+    text-align: left;
 }
 .profession {
     font-size: 1.3rem;

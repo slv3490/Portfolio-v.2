@@ -1,0 +1,44 @@
+@import "../variables";
+
+.container-form {
+    
+}
+.form {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--blue-50);
+    max-width: 30rem;
+    margin: 3rem auto;
+}
+.camp {
+    margin: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form label {
+    flex: 1;
+    color: white;
+}
+.form input, .form textarea {
+    flex: 2;
+    border-radius: .2rem;
+    padding: .2rem .5rem;
+    font-family: "Roboto", sans-serif;
+}
+form .button-submit {
+    display: block;
+    margin: 0 0 0 auto;
+    background-color: var(--blue-300);
+    color: white;
+    padding: .5rem 1rem;
+}
+
+form .button-submit:hover {
+    background-color: #124056;
+    cursor: pointer;
+}
