@@ -1,12 +1,13 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 body {
     background-color: var(--gray-500);
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar {
     width: 10px;
@@ -23,13 +24,19 @@ h1, h2, h3, h4 {
     font-style: normal;
     color: white;
     margin: 0;
+    font-size: calc(1em + 1vw);
+    text-align: center;
 }
 h2 {
-    text-align: center;
     margin-top: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
-
+h3 {
+    font-size: 1.7rem;
+}
+h4 {
+    font-size: 1.3rem;
+}
 p, a {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -45,7 +52,22 @@ a {
     max-width: 1200px;
     margin: 0 auto;
 }
-
+button {
+    border: none;
+    font-family: "Roboto", sans-serif;
+}
+label {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+input {
+    border: none;
+}
+@media (min-width: 840px) {
+    .title {
+        font-size: calc(1em + 1vw)
+    }
+}
 /* Fonts */
 
 .roboto-thin {

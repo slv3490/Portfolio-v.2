@@ -4,15 +4,34 @@
     background-image: url("../images/backgroundHeader.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: auto;
+}
+@media (min-width: 1024px) {
+    .container-header {
+        height: 100vh;
+    }
+}
+
+#modelLeo > canvas {
+    width: 100% !important;
+    height: 100% !important;
+    margin-bottom: 2rem;
 }
 .principal-nav {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     user-select: none;
     padding-top: 1rem;
+    gap: 1.5rem;
+}
+@media (min-width: 840px) {
+    .principal-nav {
+        flex-direction: row;
+        gap: 0;
+    }
 }
 .divpadre {
     width: 10rem;
@@ -45,24 +64,31 @@
     display: flex;
 }
 .square {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background-color: var(--blue-300);
     margin: 5px;
 }
 .gradient {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgb(0, 0, 0) 40%, var(--blue-300) 100%);
+    background: rgb(77,76,81);
+    background: linear-gradient(90deg, rgba(77,76,81,0) 0%, rgba(21,75,100,1) 90%);
 }
 .opposite-gradient {
-    background: rgb(0,0,0);
-    background: linear-gradient(270deg, rgb(0, 0, 0) 40%, var(--blue-300) 100%);
+    background: rgb(77,76,81);
+    background: linear-gradient(270deg, rgba(77,76,81,0) 0%, rgba(21,75,100,1) 90%);
 }
 .content-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
+    flex-direction: column-reverse;
+}
+@media (min-width: 1024px) {
+    .content-header {
+        margin-top: 5rem;
+        flex-direction: row;
+    }
 }
 .presentation {
     display: flex;
@@ -76,24 +102,48 @@
     user-select: none;
 }
 .name {
-    font-size: 3rem;
+    font-size: calc(1.7em + 1vw);
     font-weight: bold;
-
+    text-align: center;
+}
+@media (min-width: 1024px) {
+    .name {
+        text-align: left;
+    }
 }
 .welcome {
     font-family: "Montserrat", "sans-serif";
-    font-size: 2.3rem;
+    font-size: calc(1.4em + 1vw);
     margin: 1rem 0;
     font-weight: 600;
     color: rgb(223, 223, 223);
+    text-align: center;
+}
+@media (min-width: 1024px) {
+    .welcome {
+        text-align: left;
+    }
 }
 .profession {
-    font-size: 1.3rem;
+    font-size: calc(.6em + 1vw);
     color: var(--blue-50);
+    text-align: center;
+}
+@media (min-width: 1024px) {
+    .profession {
+        text-align: left;
+    }
 }
 .networks {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
+}
+@media (min-width: 1024px) {
+    .networks {
+        justify-content: left;
+    }
 }
 .icon-network {
     width: 2rem;
@@ -117,7 +167,7 @@
 }
 .email {
     background-color: #EFEFE1;
-    border: 1px solid #ffffff;
+    border: 1px solid #a0a0a0;
     transition: all 200ms ease-in;
 }
 .email p {
@@ -126,16 +176,34 @@
 .email:hover {
     background-color: #d1d1c3;
 }
-.github, .linkedin, .email {
+.curriculum-vitae {
+    background-color: #ffffff;
+    border: 1px solid #adadad;
+    transition: all 200ms ease-in;
+}
+.curriculum-vitae p {
+    color: black;
+}
+.curriculum-vitae:hover {
+    background-color: #d0d0d0;
+}
+.github, .linkedin, .email, .curriculum-vitae {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .3rem .8rem;
+    padding: .3rem 1.5rem;
     margin-top: 2rem;
     border-radius: .3rem;
 }
 .ubication {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+@media (min-width: 1024px) {
+    .ubication {
+        justify-content: left;
+    }
 }

@@ -6,18 +6,29 @@
 .proyects-title {
     text-align: center;
     margin-top: 2rem;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
+    padding: 1rem;
 }
 .proyects {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1;
     margin-top: 2rem;
     gap: 2rem;
 }
+@media (min-width: 1024px) {
+    .proyects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 .proyect {
     margin: 0 auto;
-    border: 1px solid #2995c788;
-    padding: 0 0 1.5rem;
+    padding: 0 1rem 1.5rem;
+}
+.border-content {
+    border: 3px solid #2995c788;
+    border-top: none;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 .proyect-title, .proyect-paragraph, .tags {
     padding: 0 1.5rem;
@@ -25,23 +36,30 @@
 .proyect-video {
     width: 100%;
     cursor: pointer;
+    vertical-align: top;
 }
 .proyect-title {
     text-align: center;
-    margin: 1.3rem 0;
-    font-size: 1.7rem;
+    padding: 1.3rem 1rem;
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+@media(min-width:480px) {
+    .proyect-title {
+        font-size: 1.7rem;
+    }
 }
 .proyect-paragraph {
     font-size: 1.2rem;
     letter-spacing: 1px;
-    margin: 1.3rem 0;
+    margin: .7rem 0;
 }
 .tags {
     display: flex;
-    margin-top: 1.2rem;
+    flex-wrap: wrap;
+    gap: .7rem;
 }
 .tag {
-    margin-right: .7rem;
     background-color: var(--blue-300);
     padding: .2rem .8rem;
     border: 1px solid #ffffff33;
@@ -52,4 +70,48 @@
 }
 .tag:hover {
     background-color: #13435a;
+}
+
+/* Habilities */
+
+.habilities {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.habilities img{
+    width: 4rem;
+}
+#scrollbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    cursor: pointer;
+}
+.arrow-scroll {
+    width: 4rem;
+}
+.hidden {
+    display: none;
+}
+.large {
+    grid-column: 1;
+}
+@media(min-width:1024px) {
+    .large {
+        grid-column: 1 / 3;
+    }
+}
+.functions li {
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+.proyect-title-small {
+    font-size: 1.1rem;
+    text-align: center;
 }

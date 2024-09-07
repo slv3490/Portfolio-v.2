@@ -3,13 +3,20 @@
 .container-about-me {
     display: flex;
     justify-content: center;
+    flex-direction: column-reverse;
     align-items: center;
-    height: 33rem;
+    height: auto;
     flex: 1;
 }
+@media(min-width: 1024px) {
+    .container-about-me {
+        height: 37rem;
+        flex-direction: row;
+        height: auto;
+    }
+}
 .about-me {
-    margin-top: 2rem;
-    margin-right: 2rem;
+    margin: 2rem;
     flex: 1;
 }
 .about-me p {

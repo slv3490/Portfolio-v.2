@@ -2,12 +2,14 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:wght@100;300;400;500&family=Press+Start+2P&display=swap" rel="stylesheet">
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 	</head>
 	<body>
+
 		<header>
 			<nav class="principal-nav">
 				<a href="about-me.html">Sobre Mí</a>
@@ -74,132 +76,339 @@
                         </div>
                     </div>
                 </div>
-				<a href="skills.html">Habilidades</a>
+				<a href="contact.html">Contacto</a>
 			</nav>
 		</header>
 
 		<!-- MAIN -->
 		<main class="container main">
 			<!-- Proyects -->
-			<div class="container-proyects">
-				<h2 class="proyects-title">Mis Proyectos</h2>
-				
-				<article class="proyects">
-                    <div class="proyect">
-						<video class="proyect-video" src="src/video/curol.mp4" muted loop></video>
-                        <h3 class="proyect-title">CurOl</h3>
-                        <p class="proyect-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, asperiores! Ad labore sunt obcaecati, cumque vel, deleniti magni fugiat culpa minima fuga ut. Animi pariatur quod rerum quidem ullam laudantium.</p>
-                        <div class="tags">
-                            <p class="tag">Laravel</p>
-                            <p class="tag">Scss</p>
-                            <p class="tag">Javascript</p>
-                            <p class="tag">MySql</p>
-                        </div>
+			<article class="container-proyects">
+                
+				<h2 class="proyects-title">Mis Proyectos y Habilidades</h2>
+				<section class="container">
+                    <div class="habilities">
+                        <img src="src/svg/html.svg" alt="Icono de la tecnologia html5">
+                        <img src="src/svg/css3.svg" alt="Icono de la tecnologia css3">
+                        <img src="src/svg/sass.svg" alt="Icono de la tecnologia sass">
+                        <img src="src/svg/javascript.svg" alt="Icono de la tecnologia javascript">
+                        <img src="src/svg/php.svg" alt="Icono de la tecnologia php">
+                        <img src="src/svg/mysql.svg" alt="Icono de la tecnologia mysql">
+                        <img src="src/svg/laravel.svg" alt="Icono de la tecnologia laravel">
+                        <img src="src/svg/githubhabilities.svg" alt="Icono de github">
                     </div>
-					<div class="proyect">
-						<video class="proyect-video" src="src/video/portfolio-v1.mp4" muted loop></video>
-                        <h3 class="proyect-title">Portafolio v1</h3>
-                        <p class="proyect-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, asperiores! Ad labore sunt obcaecati, cumque vel, deleniti magni fugiat culpa minima fuga ut. Animi pariatur quod rerum quidem ullam laudantium.</p>
-                        <div class="tags">
-                            <p class="tag">Laravel</p>
-                            <p class="tag">Scss</p>
-                            <p class="tag">Javascript</p>
-                            <p class="tag">MySql</p>
-                        </div>
-					</div>
-					<div class="proyect">
-						<video class="proyect-video" src="src/video/devwebcamp.mp4" muted loop></video>
-                        <h3 class="proyect-title">DevWebCamp</h3>
-                        <p class="proyect-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, asperiores! Ad labore sunt obcaecati, cumque vel, deleniti magni fugiat culpa minima fuga ut. Animi pariatur quod rerum quidem ullam laudantium.</p>
-                        <div class="tags">
-                            <p class="tag">Laravel</p>
-                            <p class="tag">Scss</p>
-                            <p class="tag">Javascript</p>
-                            <p class="tag">MySql</p>
-                        </div>
-					</div>
+                </section>
+				<section class="proyects">
+                    <article class="proyect">
+						<video class="proyect-video" src="src/video/curol.mp4" muted loop></video>
+                        <div class="border-content">
+                            <h3 class="proyect-title">CurOl</h3>
+                            <p class="proyect-paragraph">Este es un proyecto personal de cursos online que diseñé y programé desde cero con el framework <span class="highlighted">Laravel</span> en el cual afronté muchos desafíos nuevos y emocionantes.</p>
+                            <div class="hidden">
+                                <p class="proyect-paragraph">Funcionalidades:</p>
+                                <ul class="functions">
+                                    <li>Inicio de sesión</li>
+                                    <li>Registro de cuentas</li>
+                                    <li>Recuperacion de cuenta</li>
+                                    <li>Compra y venta de cursos onlines</li>
+                                    <li>Filtro por categorias y busqueda de cursos</li>
+                                    <li>Panel de Administración con:
+                                        <ol>
+                                            <li>Administracion de cursos</li>
+                                            <li>Administracion de roles y permisos</li>
+                                            <li>Administracion de cuenta</li>
+                                            <li>Administracion de categorias</li>
+                                            <li>Restricción de acceso a ciertas partes del sitio web según permisos de usuario</li>
+                                            <li>Cursos Comprados</li>
+                                        </ol>
+                                    </li>
 
-					<div class="proyect">
+                                    <li>Carrousel de cursos.</li>
+                                </ul>
+                                <p class="proyect-paragraph">Tuve muchos obstáculos como el de mi primer <span class="highlighted">framework</span>, amplia variedad de conceptos nuevos como <span class="highlighted">middlewares</span>, <span class="highlighted">commmands</span>, <span class="highlighted">query builders</span>, cómo se relacionan las tablas en <span class="highlighted">Laravel</span>, <span class="highlighted">validations</span>, <span class="highlighted">file storage</span> y cómo funciona <span class="highlighted">Laravel</span> en general. Algunos de estos problemas que surgieron a lo largo del proyecto fueron:</p>
+
+                                <p class="proyect-paragraph"><span class="bold">Integración API de Paypal:</span> Para el sistema de pagos, implementé la <span class="highlighted">API</span> gratuita que proporciona paypal e integré esta <span class="highlighted">API</span> con el proyecto para que solo los usuarios que tengan los permisos necesarios puedan vender estos cursos.</p>
+                                <p class="proyect-paragraph"><span class="bold">Testing:</span> Mi primera vez haciendo <span class="highlighted">testing</span> fue algo lenta, con muchas dudas y trabas pero me permitió tener una visión mas amplia de todo.</p>
+                                <p class="proyect-paragraph"><span class="bold">Livewire:</span> Tanto el inicio de sesion como el de registro de cuentas fueron creadas a partir de <span class="highlighted">livewire</span> ya que quería implementar algo distinto como era la validación en tiempo real y aprender un poco sobre esta librería.</p>
+                                <p class="proyect-paragraph"><span class="bold">Emails:</span> Si bien ya había trabajado en proyectos anteriores con <span class="highlighted">emails</span>, se me presentó un nuevo problema de URLs en las pruebas de envío de confirmación y recuperación de cuentas.</p>
+                            </div>
+                            <div class="tags">
+                                <p class="tag">Laravel</p>
+                                <p class="tag">Scss</p>
+                                <p class="tag">Javascript</p>
+                                <p class="tag">MySql</p>
+                            </div>
+                            <button class="button">Ver más</button>
+                        </div>
+                    </article>
+
+					<article class="proyect">
+						<video class="proyect-video" src="src/video/portfolio-v1.mp4" muted loop></video>
+                        <div class="border-content">
+                            <h3 class="proyect-title">Portafolio v.1</h3>
+                            <p class="proyect-paragraph">El primer portafolio que desarrollé fue implementado utilizando tecnologías como <span class="highlighted">JavaScript, PHP, HTML, SASS</span> y GSAP como libreria de animaciones.</p>
+                            <div class="hidden">
+                                <p class="proyect-paragraph">Funcionalidades:</p>
+                                <ul class="functions">
+                                    <li>Formulario de contacto</li>
+                                </ul>
+                                <h4>Puntos a mejorar</h4>
+                                <p class="proyect-paragraph">Hoy en día, con más experiencia que en aquel entonces, al revisar el proyecto considero que contiene muchas más animaciones de las necesarias, además de la ausencia de un logotipo personal.</p>
+                            </div>
+                            <div class="tags">
+                                <p class="tag">Php</p>
+                                <p class="tag">Scss</p>
+                                <p class="tag">Javascript</p>
+                                <p class="tag">Gsap</p>
+                                <p class="tag">Html</p>
+                            </div>
+                            <button class="button">Ver más</button>
+                        </div>
+					</article>
+					<article class="proyect">
+						<video class="proyect-video" src="src/video/devwebcamp.mp4" muted loop></video>
+                        <div class="border-content">
+                            <h3 class="proyect-title">DevWebCamp</h3>
+                            <p class="proyect-paragraph">DevWebCamp es una conferencia para desarrolladores que cuenta con ponentes ofreciendo charlas y workshops. Los asistentes también tendrán la posibilidad de registrarse mediante un pago a través de PayPal.</p>
+                            <div class="hidden">
+                                <p class="proyect-paragraph">Funcionalidades:</p>
+                                <ul class="functions">
+                                    <li>Inicio de sesión</li>
+                                    <li>Registro de cuentas</li>
+                                    <li>Verficacion de E-mail</li>
+                                    <li>Compra y venta de boletos para ver las conferencias online</li>
+                                    <li>Panel de Administracion con: 
+                                        <ol>
+                                            <li>Últimos Registros</li>
+                                            <li>Ingresos</li>
+                                            <li>Eventos con menos lugares disponibles</li>
+                                            <li>Eventos con más lugares disponibles</li>
+                                            <li>Administracion de ponentes</li>
+                                            <li>Administracion de eventos</li>
+                                            <li>Administracion de regalos</li>
+                                            <li>Administracion de registrados</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                                <p class="proyect-paragraph">Este es el proyecto final del curso "Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL" de <a class="teacher highlighted" href="https://www.linkedin.com/in/juanpablodelatorre/"><u>Juan Pablo De la torre Valdez</u></a></p>
+                            </div>
+                            <div class="tags">
+                                <p class="tag">Php</p>
+                                <p class="tag">Scss</p>
+                                <p class="tag">Javascript</p>
+                                <p class="tag">MySql</p>
+                                <p class="tag">Html</p>
+                            </div>
+                            <button class="button">Ver más</button>
+                        </div>
+					</article>
+
+					<article class="proyect">
 						<video class="proyect-video" src="src/video/uptask.mp4" muted loop></video>
-                        <h3 class="proyect-title">UpTask</h3>
-                        <p class="proyect-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, asperiores! Ad labore sunt obcaecati, cumque vel, deleniti magni fugiat culpa minima fuga ut. Animi pariatur quod rerum quidem ullam laudantium.</p>
-                        <div class="tags">
-                            <p class="tag">Laravel</p>
-                            <p class="tag">Scss</p>
-                            <p class="tag">Javascript</p>
-                            <p class="tag">MySql</p>
+                        <div class="border-content">
+                            <h3 class="proyect-title">UpTask</h3>
+                            <p class="proyect-paragraph">Este es un proyecto de administración de tareas en el que profundicé en el uso de peticiones Fetch, mejorando la interactividad y funcionalidad de la aplicación.</p>
+                            <div class="hidden">
+                                <p class="proyect-paragraph">Funcionalidades:</p>
+                                <ul class="functions">
+                                    <li>Inicio de sesión</li>
+                                    <li>Registro de cuentas</li>
+                                    <li>Administracion de tareas</li>
+                                    <li>Filtro por de tareas por pendientes, completadas o todas</li>
+                                    <li>Administracion de roles y permisos</li>
+                                    <li>Administracion de cuenta</li>
+                                    <li>Administracion de categorias</li>
+                                </ul>
+                            </div>
+                            <div class="tags">
+                                <p class="tag">Php</p>
+                                <p class="tag">Scss</p>
+                                <p class="tag">Javascript</p>
+                                <p class="tag">MySql</p>
+                                <p class="tag">Html</p>
+                            </div>
+                            <button class="button">Ver más</button>
                         </div>
-					</div>
-					<div class="proyect">
+					</article>
+					<article class="proyect">
 						<video class="proyect-video" src="src/video/appsalon.mp4" muted loop></video>
-                        <h3 class="proyect-title">AppSalon</h3>
-                        <p class="proyect-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, asperiores! Ad labore sunt obcaecati, cumque vel, deleniti magni fugiat culpa minima fuga ut. Animi pariatur quod rerum quidem ullam laudantium.</p>
-                        <div class="tags">
-                            <p class="tag">Laravel</p>
-                            <p class="tag">Scss</p>
-                            <p class="tag">Javascript</p>
-                            <p class="tag">MySql</p>
+                        <div class="border-content">
+                            <h3 class="proyect-title">AppSalon</h3>
+                            <p class="proyect-paragraph">Este es un proyecto de administración de citas para un salón de belleza en el que aprendí a utilizar peticiones <span class="highlighted">Fetch</span> y <span class="highlighted">JSON</span> para interactuar entre <span class="highlighted">PHP</span> y <span class="highlighted">JavaScript</span>, comprendiendo cómo se relacionan entre sí. Además, adquirí mis primeros conocimientos sobre el envío de correos electrónicos.</p>
+                            <div class="hidden">
+                                <p class="proyect-paragraph">Funcionalidades:</p>
+                                <ul class="functions">
+                                    <li>Inicio de sesión.</li>
+                                    <li>Registro de cuentas.</li>
+                                    <li>Registro de citas</li>
+                                    <li>Filtro de citas por fechas</li>
+                                </ul>
+                                <p class="proyect-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel maxime rerum ut, repudiandae voluptatum, accusantium, asperiores enim excepturi saepe aspernatur nostrum id quibusdam nobis officiis quam facilis alias hic vitae?</p>
+                            </div>
+                            <div class="tags">
+                                <p class="tag">Php</p>
+                                <p class="tag">Scss</p>
+                                <p class="tag">Javascript</p>
+                                <p class="tag">MySql</p>
+                                <p class="tag">Html</p>
+                            </div>
+                            <button class="button">Ver más</button>
                         </div>
-					</div>
-					<div class="proyect">
+					</article>
+					<article class="proyect">
 						<video class="proyect-video" src="src/video/bienesraices.mp4" muted loop></video>
-                        <h3 class="proyect-title">Bienes Raíces</h3>
-                        <p class="proyect-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, asperiores! Ad labore sunt obcaecati, cumque vel, deleniti magni fugiat culpa minima fuga ut. Animi pariatur quod rerum quidem ullam laudantium.</p>
-                        <div class="tags">
-                            <p class="tag">Laravel</p>
-                            <p class="tag">Scss</p>
-                            <p class="tag">Javascript</p>
-                            <p class="tag">MySql</p>
+                        <div class="border-content">
+                            <h3 class="proyect-title">Bienes Raíces</h3>
+                            <p class="proyect-paragraph">Este es un proyecto en el que los usuarios pueden anunciar sus propiedades en venta. En este proyecto, aprendí a integrar <span class="highlighted">bases de datos relacionales</span> y a utilizar <span class="highlighted">PHP</span>, <span class="highlighted">MySQL</span>, <span class="highlighted">SQL</span>, la arquitectura <span class="highlighted">MVC</span>, entre otras tecnologías y habilidades.</p>
+                            <div class="hidden">
+                                <p class="proyect-paragraph">Funcionalidades:</p>
+                                <ul class="functions">
+                                    <li>Inicio de sesión.</li>
+                                    <li>Registro de cuentas.</li>
+                                    <li>Administracion de cursos</li>
+                                    <li>Filtro por categorias y busqueda de cursos</li>
+                                    <li>Administracion de roles y permisos.</li>
+                                    <li>Administracion de cuenta.</li>
+                                    <li>Administracion de categorias.</li>
+                                </ul>
+                                <p class="proyect-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel maxime rerum ut, repudiandae voluptatum, accusantium, asperiores enim excepturi saepe aspernatur nostrum id quibusdam nobis officiis quam facilis alias hic vitae?</p>
+                            </div>
+                            <div class="tags">
+                                <p class="tag">Php</p>
+                                <p class="tag">Scss</p>
+                                <p class="tag">Javascript</p>
+                                <p class="tag">MySql</p>
+                                <p class="tag">Html</p>
+                            </div>
+                            <button class="button">Ver más</button>
                         </div>
-					</div>
-					<div class="proyect">
-						<video class="proyect-video" src="src/video/festival.mp4" muted loop></video>
-                        <h3 class="proyect-title">Rock & EDM Festival</h3>
-                        <p class="proyect-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, asperiores! Ad labore sunt obcaecati, cumque vel, deleniti magni fugiat culpa minima fuga ut. Animi pariatur quod rerum quidem ullam laudantium.</p>
-                        <div class="tags">
-                            <p class="tag">Laravel</p>
-                            <p class="tag">Scss</p>
-                            <p class="tag">Javascript</p>
-                            <p class="tag">MySql</p>
+					</article>
+					<article class="proyect">
+                        <a href="https://elegant-sherbet-a95b19.netlify.app" target="_blank">
+                            <video class="proyect-video" src="src/video/festival.mp4" muted loop></video>
+                        </a>
+                        <div class="border-content">
+                            <h3 class="proyect-title">Rock & EDM Festival</h3>
+                            <p class="proyect-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, asperiores! Ad labore sunt obcaecati, cumque vel, deleniti magni fugiat culpa minima fuga ut. Animi pariatur quod rerum quidem ullam laudantium.</p>
+                            <div class="hidden">
+                                <p class="proyect-paragraph">Funcionalidades:</p>
+                                <ul class="functions">
+                                    <li>Inicio de sesión.</li>
+                                    <li>Registro de cuentas.</li>
+                                    <li>Compra y venta de cursos onlines.</li>
+                                    <li>Administracion de cursos</li>
+                                    <li>Filtro por categorias y busqueda de cursos</li>
+                                    <li>Administracion de roles y permisos.</li>
+                                    <li>Administracion de cuenta.</li>
+                                    <li>Administracion de categorias.</li>
+                                </ul>
+                                <p class="proyect-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel maxime rerum ut, repudiandae voluptatum, accusantium, asperiores enim excepturi saepe aspernatur nostrum id quibusdam nobis officiis quam facilis alias hic vitae?</p>
+                            </div>
+                            <div class="tags">
+                                <p class="tag">Scss</p>
+                                <p class="tag">Javascript</p>
+                                <p class="tag">Html</p>
+                            </div>
+                            <button class="button">Ver más</button>
                         </div>
-					</div>
-					<div class="proyect">
-						<video class="proyect-video" src="src/video/frontendstore.mp4" muted loop></video>
-                        <h3 class="proyect-title">Frontend Store</h3>
-                        <p class="proyect-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, asperiores! Ad labore sunt obcaecati, cumque vel, deleniti magni fugiat culpa minima fuga ut. Animi pariatur quod rerum quidem ullam laudantium.</p>
-                        <div class="tags">
-                            <p class="tag">Laravel</p>
-                            <p class="tag">Scss</p>
-                            <p class="tag">Javascript</p>
-                            <p class="tag">MySql</p>
+					</article>
+					<article class="proyect">
+                        <a href="https://legendary-beijinho-e02149.netlify.app" target="_blank">
+                            <video class="proyect-video" src="src/video/frontendstore.mp4" muted loop></video>
+                        </a>
+                        <div class="border-content">
+                            <h3 class="proyect-title">Frontend Store</h3>
+                            <p class="proyect-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, asperiores! Ad labore sunt obcaecati, cumque vel, deleniti magni fugiat culpa minima fuga ut. Animi pariatur quod rerum quidem ullam laudantium.</p>
+                            <div class="hidden">
+                                <p class="proyect-paragraph">Funcionalidades:</p>
+                                <ul class="functions">
+                                    <li>Inicio de sesión.</li>
+                                    <li>Registro de cuentas.</li>
+                                    <li>Compra y venta de cursos onlines.</li>
+                                    <li>Administracion de cursos</li>
+                                    <li>Filtro por categorias y busqueda de cursos</li>
+                                    <li>Administracion de roles y permisos.</li>
+                                    <li>Administracion de cuenta.</li>
+                                    <li>Administracion de categorias.</li>
+                                </ul>
+                                <p class="proyect-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel maxime rerum ut, repudiandae voluptatum, accusantium, asperiores enim excepturi saepe aspernatur nostrum id quibusdam nobis officiis quam facilis alias hic vitae?</p>
+                            </div>
+                            <div class="tags">
+                                <p class="tag">Css</p>
+                                <p class="tag">Html</p>
+                            </div>
+                            <button class="button">Ver más</button>
                         </div>
-					</div>
-					<div class="proyect">
-						<video class="proyect-video" src="src/video/blogcafe.mp4" muted loop></video>
-                        <h3 class="proyect-title">Blog Café</h3>
-                        <p class="proyect-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, asperiores! Ad labore sunt obcaecati, cumque vel, deleniti magni fugiat culpa minima fuga ut. Animi pariatur quod rerum quidem ullam laudantium.</p>
-                        <div class="tags">
-                            <p class="tag">Laravel</p>
-                            <p class="tag">Scss</p>
-                            <p class="tag">Javascript</p>
-                            <p class="tag">MySql</p>
+					</article>
+					<article class="proyect">
+                        <a href="https://beamish-crumble-f2eca6.netlify.app" target="_blank">
+                            <video class="proyect-video" src="src/video/blogcafe.mp4" muted loop></video>
+                        </a>
+                        <div class="border-content">
+                            <h3 class="proyect-title">Blog Café</h3>
+                            <p class="proyect-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, asperiores! Ad labore sunt obcaecati, cumque vel, deleniti magni fugiat culpa minima fuga ut. Animi pariatur quod rerum quidem ullam laudantium.</p>
+                            <div class="hidden">
+                                <p class="proyect-paragraph">Funcionalidades:</p>
+                                <ul class="functions">
+                                    <li>Inicio de sesión.</li>
+                                    <li>Registro de cuentas.</li>
+                                    <li>Compra y venta de cursos onlines.</li>
+                                    <li>Administracion de cursos</li>
+                                    <li>Filtro por categorias y busqueda de cursos</li>
+                                    <li>Administracion de roles y permisos.</li>
+                                    <li>Administracion de cuenta.</li>
+                                    <li>Administracion de categorias.</li>
+                                </ul>
+                                <p class="proyect-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel maxime rerum ut, repudiandae voluptatum, accusantium, asperiores enim excepturi saepe aspernatur nostrum id quibusdam nobis officiis quam facilis alias hic vitae?</p>
+                            </div>
+                            <div class="tags">
+                                <p class="tag">Css</p>
+                                <p class="tag">Html</p>
+                            </div>
+                            <button class="button">Ver más</button>
                         </div>
-					</div>
-					<div class="proyect">
-						<video class="proyect-video" src="src/video/ddweb.mp4" muted loop></video>
-                        <h3 class="proyect-title">Diseño y Desarrollo Web</h3>
-                        <p class="proyect-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, asperiores! Ad labore sunt obcaecati, cumque vel, deleniti magni fugiat culpa minima fuga ut. Animi pariatur quod rerum quidem ullam laudantium.</p>
-                        <div class="tags">
-                            <p class="tag">Laravel</p>
-                            <p class="tag">Scss</p>
-                            <p class="tag">Javascript</p>
-                            <p class="tag">MySql</p>
+					</article>
+					<article class="proyect">
+                        <a href="https://regal-swan-3fffe1.netlify.app" target="_blank">
+                            <video class="proyect-video" src="src/video/ddweb.mp4" muted loop></video>
+                        </a>
+                        <div class="border-content">
+                            <h3 class="proyect-title">Diseño y Desarrollo Web</h3>
+                            <p class="proyect-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, asperiores! Ad labore sunt obcaecati, cumque vel, deleniti magni fugiat culpa minima fuga ut. Animi pariatur quod rerum quidem ullam laudantium.</p>
+                            <div class="hidden">
+                                <p class="proyect-paragraph">Funcionalidades:</p>
+                                <ul class="functions">
+                                    <li>Inicio de sesión.</li>
+                                    <li>Registro de cuentas.</li>
+                                    <li>Compra y venta de cursos onlines.</li>
+                                    <li>Administracion de cursos</li>
+                                    <li>Filtro por categorias y busqueda de cursos</li>
+                                    <li>Administracion de roles y permisos.</li>
+                                    <li>Administracion de cuenta.</li>
+                                    <li>Administracion de categorias.</li>
+                                </ul>
+                                <p class="proyect-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel maxime rerum ut, repudiandae voluptatum, accusantium, asperiores enim excepturi saepe aspernatur nostrum id quibusdam nobis officiis quam facilis alias hic vitae?</p>
+                            </div>
+                            <div class="tags">
+                                <p class="tag">Css</p>
+                                <p class="tag">Html</p>
+                            </div>
+                            <button class="button">Ver más</button>
                         </div>
-					</div>
-				</article>
+					</article>
+				</section>
+
+
 			</div>
 		</main>
-		<a href="https://www.freepik.es/foto-gratis/fondo-cuadricula-digital-abstracto-negro_13312417.htm#query=fondos%20para%20paginas%20web&position=18&from_view=keyword&track=ais_hybrid&uuid=7233c893-0571-4888-81bd-23a5ddf9158d">Imagen de rawpixel.com</a> en Freepik
+
+        <div id="scrollbar">
+            <img class="arrow-scroll" src="src/svg/arrow.svg" alt="Svg de una flecha">
+        </div>
+
+        <footer class="footer">
+            <a href="https://www.freepik.es/foto-gratis/fondo-cuadricula-digital-abstracto-negro_13312417.htm#query=fondos%20para%20paginas%20web&position=18&from_view=keyword&track=ais_hybrid&uuid=7233c893-0571-4888-81bd-23a5ddf9158d">Imagen de rawpixel.com</a> en Freepik
+        </footer>
 		
 		<script type="module" src="src/js/index.js"></script>
 		<script type="module" src="src/js/proyects.js"></script>

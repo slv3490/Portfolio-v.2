@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:wght@100;300;400;500&family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
 				<a href="proyects.html">Proyectos</a>
                 <div class="divpadre">
 					<div class="inicio hijo"> 
-                        <a href="skills.html">Habilidades</a>
+                        <a href="contact.html">Contacto</a>
                     </div>
                     <div class="adentro hijo">
                         <div>
@@ -80,21 +81,32 @@
 
 		<!-- MAIN -->
 		<main class="container main">
-			<!-- About Me -->
-			<div class="container-about-me">
-				<div class="about-me">
-					<h2>Sobre mí</h2>
-					
-					<p>Me encantan los videojuegos, el anime, entrenar, escuchar música, ver a mis amigos y una de mis metas es saltar en paracaídas.</p>
-                    
-                    <p>Una de las cosas que me gusta hacer es salir de mi zona de confort, donde pueda incomodarme para hacer y aprender cosas nuevas. De esta forma fue como me empezó a llamar la atención <b>programar</b>.</p>
-					
-					<p>De niño, siempre me cuestionaba sobre cómo funcionaban las computadoras y el esfuerzo que implicaba hacer cosas tan llamativas e interactivas como <b>sitios web</b> o juegos. Con el tiempo, me animé y decidí empezar a aprender a <b>programar</b>. Con miedo y ansias, poco a poco, voy adquiriendo <b>habilidades nuevas</b> que me ayudan a superar un obstáculo tras otro.</p>
-				</div>
-				<div id="prueba"></div>
-			</div>
+            <h2 class="title">Contacto</h2>
+			<div class="container-form">
+                <form id="contact-form" action="http://localhost:8000/email.php" class="form" method="POST">
+                        <div class="input-group">
+                            <input id="email" name="email" class="input" required=""/>
+                            <label for="email" class="user-label">E-Mail</label>
+                        </div>
+    
+                        <div class="input-group">
+                            <input id="issue" name="issue" class="input" required=""/>
+                            <label for="issue" class="user-label">Asunto</label>
+                        </div>
+    
+                        <div class="input-group">
+                            <textarea id="mensage" name="mensage" class="input" required=""></textarea>
+                            <label for="mensage" class="user-label">Mensaje</label>
+                        </div>
+    
+                    <input type="submit" value="Enviar" class="button-submit">
+                </form>
+            </div>
+
+            <div id="message"></div>
 		</main>
 		
-		<script type="module" src="js/index.js"></script>
+		<script type="module" src="src/js/index.js"></script>
+        <script src="src/js/contact.js"></script>
 	</body>
 </html>
