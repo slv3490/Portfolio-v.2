@@ -117,12 +117,16 @@
     margin: 1rem 0;
     font-weight: 600;
     color: rgb(223, 223, 223);
+<<<<<<< HEAD
     text-align: center;
 }
 @media (min-width: 1024px) {
     .welcome {
         text-align: left;
     }
+=======
+    text-align: left;
+>>>>>>> 4821c1022e95ec8de0ad5b3a46cbcbed54cd1364
 }
 .profession {
     font-size: calc(.6em + 1vw);

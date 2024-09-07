@@ -1,5 +1,6 @@
 @import "../variables";
 
+<<<<<<< HEAD
 .form {
     padding: 2rem;
     margin: 3rem auto 3rem;
@@ -18,6 +19,20 @@ textarea {
 fieldset {
     padding: 2rem;
     border: none;
+=======
+.container-form {
+    
+}
+.form {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--blue-50);
+    max-width: 30rem;
+    margin: 3rem auto;
+>>>>>>> 4821c1022e95ec8de0ad5b3a46cbcbed54cd1364
 }
 .camp {
     margin: 2rem;
@@ -30,13 +45,24 @@ fieldset {
     flex: 1;
     color: white;
 }
+<<<<<<< HEAD
 
 .button-submit {
+=======
+.form input, .form textarea {
+    flex: 2;
+    border-radius: .2rem;
+    padding: .2rem .5rem;
+    font-family: "Roboto", sans-serif;
+}
+form .button-submit {
+>>>>>>> 4821c1022e95ec8de0ad5b3a46cbcbed54cd1364
     display: block;
     margin: 0 0 0 auto;
     background-color: var(--blue-300);
     color: white;
     padding: .5rem 1rem;
+<<<<<<< HEAD
     font-family: "Roboto";
 }
 @media (min-width: 840px) {
@@ -78,4 +104,11 @@ fieldset {
 }
 .pin-text {
     transform: translateY(-90%) scale(0.8);
+=======
+}
+
+form .button-submit:hover {
+    background-color: #124056;
+    cursor: pointer;
+>>>>>>> 4821c1022e95ec8de0ad5b3a46cbcbed54cd1364
 }
