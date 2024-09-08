@@ -1,7 +1,9 @@
 document.getElementById('contact-form').addEventListener('submit', function(event) {
+    const buttonSubmit = document.querySelector(".button-submit");
+    buttonSubmit.classList.add("blocked")
     event.preventDefault();
 
-    fetch('http://localhost:8000/email.php', {
+    fetch('https://leodvweb.tech/email.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -14,6 +16,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     })
     .then(response => response.json())
     .then(data => {
+        console.log(data)
         const messageElement = document.getElementById('message');
         if (data.status === 'success') {
             messageElement.textContent = data.message;
@@ -22,6 +25,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             messageElement.textContent = data.message;
             messageElement.style.color = 'red';
         }
+        buttonSubmit.classList.remove("blocked")
+        setTimeout(() => {
+            messageElement.textContent = "";
+        }, 5000);
     })
     .catch(error => {
         const messageElement = document.getElementById('message');

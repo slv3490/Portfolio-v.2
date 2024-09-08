@@ -83,7 +83,7 @@
 		<main class="container main">
             <h2 class="title">Contacto</h2>
 			<div class="container-form">
-                <form id="contact-form" action="http://localhost:8000/email.php" class="form" method="POST">
+                <form id="contact-form" action="https://leodvweb.tech/email.php" class="form" method="POST">
                         <div class="input-group">
                             <input id="email" name="email" class="input" required=""/>
                             <label for="email" class="user-label">E-Mail</label>
@@ -95,8 +95,8 @@
                         </div>
     
                         <div class="input-group">
-                            <textarea id="mensage" name="mensage" class="input" required=""></textarea>
-                            <label for="mensage" class="user-label">Mensaje</label>
+                            <textarea id="text" name="text" class="input" required=""></textarea>
+                            <label for="text" class="user-label">Mensaje</label>
                         </div>
     
                     <input type="submit" value="Enviar" class="button-submit">
@@ -106,6 +106,6 @@
             <div id="message"></div>
 		</main>
         <script type="module" src="src/js/index.js"></script>
-        <script src="src/js/contact.js"></script>
+        <script type="module" src="src/js/contact.js"></script>
 	</body>
 </html>

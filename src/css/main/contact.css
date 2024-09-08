@@ -80,3 +80,15 @@ fieldset {
 .pin-text {
     transform: translateY(-90%) scale(0.8);
 }
+.blocked {
+    background-color: #464e52;
+}
+.blocked:hover {
+    background-color: #464e52;
+    cursor: not-allowed;
+}
+#message {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+}

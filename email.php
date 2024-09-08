@@ -36,8 +36,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Password = $_ENV['EMAIL_PASS']; 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
-        $mail->setFrom("leo@gmail.com", "Mi Portafolio Web");
-        $mail->addAddress('leonelsilvera9@gmail.com', 'Leonel Silvera'); 
+        $mail->setFrom($_ENV["SET_FROM"], $_ENV["NAME_SET_FROM"]);
+        $mail->addAddress($_ENV["ADD_ADDRESS"], $_ENV["NAME_ADD_ADDRESS"]); 
 
         $mail->isHTML(true);
         $mail->Subject = 'Nuevo mensaje de contacto';
