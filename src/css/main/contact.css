@@ -32,13 +32,12 @@ fieldset {
     color: white;
 }
 .button-submit {
-
     display: block;
     margin: 0 0 0 auto;
     background-color: var(--blue-300);
     color: white;
     padding: .5rem 1rem;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
 }
 @media (min-width: 840px) {
     .button-submit {

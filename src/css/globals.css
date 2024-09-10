@@ -18,9 +18,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1, h2, h3, h4 {
-    font-family: "Press Start 2P", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     color: white;
     margin: 0;
@@ -28,12 +28,11 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 h2 {
-
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 h3 {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
 }
 h4 {
     font-size: 1.3rem;
@@ -66,32 +65,6 @@ input {
 }
 @media (min-width: 840px) {
     .title {
-        font-size: calc(1em + 1vw)
+        font-size: 2.5rem;
     }
-}
-
-/* Fonts */
-
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-  
-.roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
 }

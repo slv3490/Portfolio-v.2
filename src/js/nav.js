@@ -1,14 +1,22 @@
-const squares = document.querySelectorAll('.square');
+window.addEventListener("DOMContentLoaded", function() {
+    if(document.querySelectorAll('.square')) {
+        const squares = document.querySelectorAll('.square');
 
-squares.forEach(square => {
-    gsap.fromTo(square, 
-        { opacity: 0 },
-        {
-            opacity: 1,
-            duration: 1.5,
-            repeat: -1,
-            yoyo: true,
-            delay: Math.random() * 4
+        function azar() {
+            let resultado = Math.floor(Math.random() * 24);
+            return resultado;
         }
-    );
-});
+
+        function addAnimation(number) {
+            let numeroAzar = azar();
+            if(number <= 50) {
+                setTimeout(() => {
+                    squares[numeroAzar]
+                    squares[numeroAzar].classList.add("animation");
+                    addAnimation(number + 1);
+                }, 50);
+            }
+        }
+        addAnimation(0)
+    }
+})

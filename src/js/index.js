@@ -12,3 +12,4 @@ import "../css/main/contact.css";
 
 //JS
 import "./nav.js"
+import "./modernizr.js"
